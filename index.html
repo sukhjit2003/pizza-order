@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pizza Order Form</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="title">Pizza Order App</h1>
+    </div>
+    <div class="form">
+        <h2>Fill up Order Details here</h2>
+        <form class="content" action="#"  name="orderform" onsubmit="return info()">
+            <label>Order Id:</label>
+            <br>
+            <input id="orderid" type="text" name="order">
+            <span id="iderror" class="error"></span>
+            <br>
+            <label>Customer Name:</label>
+            <br>
+            <input id="customername" type="text" name="name">
+            <span id="nameerror" class="error"></span>
+            <br>
+            <label>Email Id:</label>
+            <br>
+            <input id="email" type="email" name="email">
+            <span id="emailerror" class="error"></span>
+            <br>
+            <label>Contact Number:</label>
+            <br>
+            <input id="number" type="text" name="phonenumber">
+            <br>
+            <label>Order Date:</label>
+            <br>
+            <input type="date" name="date" id="date">
+            <br>
+            <label>Address:</label>
+            <br>
+            <input id="address" type="text" name="address">
+            <span id="addresserror" class="error"></span>
+            <br>
+            <label>Add Order:</label>
+            <button id="dynamicbutton" onclick="return create()">+</button>
+            <br>
+            <div id="dynamic">
+            </div>
+            <br>
+            <label>Total Amount:</label>
+            <input id="total" type="text" value="0" name="total">
+            <br>
+            <button type="submit" id="submit">Order Now</button> 
+        </form>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
